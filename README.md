@@ -164,4 +164,4 @@ python transform.py
   </tr>
 </table>
 
-![Human Evaluation Result](https://github.com/BaeSuyoung/CharacterMorals/blob/main/Human%20Evaluation%20Result.png)https://github.com/BaeSuyoung/CharacterMorals/blob/main/Human%20Evaluation%20Result.png)
+![Human Evaluation Result](https://github.com/BaeSuyoung/CharacterMorals/blob/main/Human%20Evaluation%20Result.png)

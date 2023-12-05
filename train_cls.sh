@@ -3,7 +3,7 @@
 python3 models/train.py \
 --model_type bert \
 --model_name_or_path bert-large-uncased \
---task_name A \
+--task_name AICA \
 --do_eval \
 --do_prediction \
 --do_lower_case \

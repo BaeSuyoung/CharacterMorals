@@ -47,9 +47,27 @@ python transform.py
  ```
 ./train_cls.sh
 ```
+- 4가지 입력 형식(A, SA, SIA, SICA) 2개 모델(bert, roberta)에 대해 실험 진행하고 가장 성능이 높은거 선택
+- 실험 결과:
+| Model      | Task Name    | Train Loss   | Valid Acc   | Valid F1   |Test Acc   | Test F1   |
+| :----    |    :----   |    :----:    |    :----:   |    :----:  | :----:    |  :----:  |
+|  BERT  |  A  |   0.04   |   0.81  |  0.81  |  0.81  |  0.81   |
+|    |  SA  |   0.04   |   0.83  |  0.83  |  0.82  |  0.82   |
+|    |  SIA  |   0.05   |   0.83  |  0.83  |  0.82  |  0.83   |
+|    |  SICA  |   0.01   |   0.97  |  0.97  |  0.98  |  0.98   |
+|  ROBERTA  |  A  |   0.08   |   0.86  |  0.86  |  0.85  |  0.85   |
+|    |  SA  |   0.07   |   0.85  |  0.85  |  0.85  |  0.85   |
+|    |  SIA  |   0.07   |   0.86  |  0.87  |  0.86  |  0.86   |
+|    |  SICA  |   0.01   |   0.98  |  0.98  |  0.98  |  0.98   |
+
+
+- 가장 성능이 좋은 학습 MAD 모델 : [Download Link](https://drive.google.com/drive/folders/1rfEtKgLVnjhGAgxKPWuguCsc6eHI3vUh) 에서 *checkpoint-SICA-7200.zip* 다운로드해서 `output/A/roberta/` 폴더에 넣고 압축 풀기.
 
 ### 5. Segment Character's Action Prediction  
  ```
 ./inference_cls.sh
 ```
+- inference_n2 각 segment 에 대해 결과 예측해줌.
+- 예측결과 : [Download Link](https://drive.google.com/drive/folders/1rfEtKgLVnjhGAgxKPWuguCsc6eHI3vUh) 에서 *inference_roberta_S_I_C_A_inf_4800_n2.lst* 다운로드해서 `inference_n2.tsv` label column 에 넣기
 
+### 6. Evaluation  

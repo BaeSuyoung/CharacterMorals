@@ -18,8 +18,8 @@ is_char_replace=True
 
 Seg_unit=2
 
-DATA_PATH='data/IMDB_movie_details.json.zip'
-OUTPUT_PATH="data/preprocessed/movie_synopsis_segments_n2.jsonl"
+DATA_PATH='../data/IMDB_movie_details.json.zip'
+OUTPUT_PATH="../data/preprocessed/movie_synopsis_segments_n2.jsonl"
 
 ####################### Functions #######################
 
@@ -164,10 +164,10 @@ def merge_segments_with_characters(segment_list, character_list):
 ####################### Preprocessing #######################
 
 with ZipFile(DATA_PATH, 'r') as zipObj:
-    zipObj.extractall('data/')
+    zipObj.extractall('../data/')
 
 
-movie_dataset=pd.read_json("data/IMDB_movie_details.json", lines=True)
+movie_dataset=pd.read_json("../data/IMDB_movie_details.json", lines=True)
 
 plot_synopsis=list(movie_dataset["plot_synopsis"])
 

@@ -1,6 +1,7 @@
 # Ethical Dynamics in Fictional Characters: A Framework for Monitoring Moral Actions in Narrative Texts  
 
 ## Abstract  
+![Framework](https://github.com/BaeSuyoung/CharacterMorals/blob/main/framework.png)
 
 ## Implementation  
 ### 1. Dataset  

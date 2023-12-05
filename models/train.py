@@ -39,18 +39,18 @@ MODEL_CLASSES = {
     'bert': (BertConfig, BertForSequenceClassification, BertTokenizer)
 }
 
-TASKS = ['A', 'S_A', 'S_I_A', 'S_I_C_A']
+TASKS = ['A', 'SA', 'SIA', 'SICA']
 TASK_DICT = {
                 'A': ['action'],
-                'S_A': ['situation', 'action'],
-                'S_I_A': ['situation', 'intention', 'action'],
-                'S_I_C_A': ['situation', 'intention', 'consequence', 'action']
+                'SA': ['situation', 'action'],
+                'SIA': ['situation', 'intention', 'action'],
+                'SICA': ['situation', 'intention', 'consequence', 'action']
 }
 
 
 def train(args, model, tokenizer):
     """ Trains the model. """
-    set_seed(args)  # Added here for reproductibility (even between python 2 and 3)
+    set_seed(args)
     processor = MoralStoriesProcessor()
     
     # Set up data-serving pipeline

@@ -13,9 +13,9 @@ from retry import retry
 
 
 
-SEGMENT_DATASET="data/preprocessed/movie_synopsis_segments_n2.jsonl"
-OUTPUT_DATASET="data/preprocessed/movie_synopsis_segments_n2_after.jsonl"
-FINAL_DATASET='data/moral_dataset/inference_n2.tsv'
+SEGMENT_DATASET="../data/preprocessed/movie_synopsis_segments_n2.jsonl"
+OUTPUT_DATASET="../data/preprocessed/movie_synopsis_segments_n2_after.jsonl"
+FINAL_DATASET='../data/moral_dataset/inference_n2.tsv'
 
 
 def load_jsonl(input_path):
@@ -225,4 +225,4 @@ for i in range(len(outputs)):
         id+=1
 
 df = pd.DataFrame(final_output)
-df.to_csv('data/moral_dataset/inference_n2.tsv', sep='\t', index=False)
+df.to_csv(FINAL_DATASET, sep='\t', index=False)

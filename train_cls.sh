@@ -1,8 +1,8 @@
 #!/bin/sh
 
 python3 models/train.py \
---model_type bert \
---model_name_or_path bert-large-uncased \
+--model_type roberta \
+--model_name_or_path roberta-large-uncased \
 --task_name AICA \
 --do_eval \
 --do_prediction \

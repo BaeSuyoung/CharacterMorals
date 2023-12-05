@@ -123,13 +123,13 @@ python transform.py
    <td>0.86</td>
   </tr>
  <tr>
-    <td>*ROBERTA*</td>
-    <td>*SICA*</td>
-    <td>*0.01*</td>
-    <td> *0.98*</td>
-    <td>*0.98*</td>
-    <td>*0.98*</td>
-   <td>*0.98*</td>
+    <td>ROBERTA</td>
+    <td>SICA</td>
+    <td>0.01</td>
+    <td>0.98</td>
+    <td>0.98</td>
+    <td>0.98</td>
+   <td>0.98</td>
   </tr>
 </table>
 
@@ -145,3 +145,21 @@ python transform.py
 - 예측결과 : [Download Link](https://drive.google.com/drive/folders/1rfEtKgLVnjhGAgxKPWuguCsc6eHI3vUh) 에서 *inference_roberta_S_I_C_A_inf_4800_n2.lst* 다운로드해서 `inference_n2.tsv` label column 에 넣기
 
 ### 6. Evaluation  
+<table>
+  <tr>
+    <th></th>
+    <th>ChatGPT</th>
+    <th>Ours(A)</th>
+    <th>Ours(SA)</th>
+    <th>Ours(SIA)</th>
+    <th>Ours(SICA)</th>
+  </tr>
+  <tr>
+    <td>Accuracy</td>
+    <td>82.56</td>
+    <td>89.53</td>
+    <td>93.02</td>
+    <td>96.51</td>
+    <td>89.53</td>
+  </tr>
+</table>

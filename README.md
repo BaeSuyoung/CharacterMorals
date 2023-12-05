@@ -123,13 +123,13 @@ python transform.py
    <td>0.86</td>
   </tr>
  <tr>
-    <td>ROBERTA</td>
-    <td>SICA</td>
-    <td>0.01</td>
-    <td> 0.98</td>
-    <td>0.98</td>
-    <td>0.98</td>
-   <td>0.98</td>
+    <td>*ROBERTA*</td>
+    <td>*SICA*</td>
+    <td>*0.01*</td>
+    <td> *0.98*</td>
+    <td>*0.98*</td>
+    <td>*0.98*</td>
+   <td>*0.98*</td>
   </tr>
 </table>
 

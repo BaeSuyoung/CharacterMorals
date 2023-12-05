@@ -1,7 +1,7 @@
 python3 models/train.py \
 --model_type roberta \
 --model_name_or_path roberta-large \
---task_name S_I_A \
+--task_name SIA \
 --do_inference \
 --do_lower_case \
 --data_dir data \

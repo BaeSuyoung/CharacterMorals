@@ -49,16 +49,90 @@ python transform.py
 ```
 - 4가지 입력 형식(A, SA, SIA, SICA) 2개 모델(bert, roberta)에 대해 실험 진행하고 가장 성능이 높은거 선택
 - 실험 결과:
-| Model      | Task Name    | Train Loss   | Valid Acc   | Valid F1   |Test Acc   | Test F1   |
-| :----    |    :----   |    :----:    |    :----:   |    :----:  | :----:    |  :----:  |
-|  BERT  |  A  |   0.04   |   0.81  |  0.81  |  0.81  |  0.81   |
-| BERT   |  SA  |   0.04   |   0.83  |  0.83  |  0.82  |  0.82   |
-| BERT   |  SIA  |   0.05   |   0.83  |  0.83  |  0.82  |  0.83   |
-|  BERT  |  SICA  |   0.01   |   0.97  |  0.97  |  0.98  |  0.98   |
-|  ROBERTA  |  A  |   0.08   |   0.86  |  0.86  |  0.85  |  0.85   |
-| ROBERTA   |  SA  |   0.07   |   0.85  |  0.85  |  0.85  |  0.85   |
-| ROBERTA   |  SIA  |   0.07   |   0.86  |  0.87  |  0.86  |  0.86   |
-|  ROBERTA  |  SICA  |   0.01   |   0.98  |  0.98  |  0.98  |  0.98   |
+<table>
+  <tr>
+    <th>Model</th>
+    <th>Task Name</th>
+    <th>Train Loss</th>
+    <th>Valid Acc</th>
+    <th>Valid F1</th>
+    <th>Test Acc</th>
+    <th>Test F1</th>
+  </tr>
+  <tr>
+    <td>BERT</td>
+    <td>A</td>
+    <td>0.04</td>
+    <td> 0.81</td>
+    <td>0.81</td>
+    <td>0.81</td>
+   <td>0.81</td>
+  </tr>
+  <tr>
+    <td>BERT</td>
+    <td>SA</td>
+    <td>0.04</td>
+    <td> 0.83</td>
+    <td>0.83</td>
+    <td>0.82</td>
+   <td>0.82</td>
+  </tr>
+  <tr>
+    <td>BERT</td>
+    <td>SIA</td>
+    <td>0.05</td>
+    <td> 0.83</td>
+    <td>0.83</td>
+    <td>0.82</td>
+   <td>0.83</td>
+  </tr>
+ <tr>
+    <td>BERT</td>
+    <td>SICA</td>
+    <td>0.01</td>
+    <td> 0.97</td>
+    <td>0.97</td>
+    <td>0.98</td>
+   <td>0.98</td>
+  </tr>
+   <tr>
+    <td>ROBERTA</td>
+    <td>A</td>
+    <td>0.08</td>
+    <td> 0.86</td>
+    <td>0.86</td>
+    <td>0.85</td>
+   <td>0.85</td>
+  </tr>
+  <tr>
+    <td>ROBERTA</td>
+    <td>SA</td>
+    <td>0.07</td>
+    <td> 0.85</td>
+    <td>0.85</td>
+    <td>0.85</td>
+   <td>0.85</td>
+  </tr>
+  <tr>
+    <td>ROBERTA</td>
+    <td>SIA</td>
+    <td>0.07</td>
+    <td> 0.86</td>
+    <td>0.87</td>
+    <td>0.86</td>
+   <td>0.86</td>
+  </tr>
+ <tr>
+    <td>ROBERTA</td>
+    <td>SICA</td>
+    <td>0.01</td>
+    <td> 0.98</td>
+    <td>0.98</td>
+    <td>0.98</td>
+   <td>0.98</td>
+  </tr>
+</table>
+
 
 
 - 가장 성능이 좋은 학습 MAD 모델 : [Download Link](https://drive.google.com/drive/folders/1rfEtKgLVnjhGAgxKPWuguCsc6eHI3vUh) 에서 *checkpoint-SICA-7200.zip* 다운로드해서 `output/A/roberta/` 폴더에 넣고 압축 풀기.

@@ -2,7 +2,7 @@
 
 python3 models/train.py \
 --model_type roberta \
---model_name_or_path roberta-large-uncased \
+--model_name_or_path roberta-large \
 --task_name AICA \
 --do_eval \
 --do_prediction \

@@ -163,3 +163,5 @@ python transform.py
     <td>89.53</td>
   </tr>
 </table>
+
+![Human Evaluation Result](https://github.com/BaeSuyoung/CharacterMorals/blob/main/Human%20Evaluation%20Result.png)https://github.com/BaeSuyoung/CharacterMorals/blob/main/Human%20Evaluation%20Result.png)

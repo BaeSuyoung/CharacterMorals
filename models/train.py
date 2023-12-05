@@ -672,7 +672,7 @@ def main():
     # Evaluate on test
     if args.do_inference:
         # 가장 성능 좋은거 집어넣기S_I_C_A/roberta/checkpoint-S_I_C_A-7200
-        checkpoint = "output/S_I_C_A/roberta/checkpoint-S_I_C_A-7200"
+        checkpoint = "checkpoint-SICA-7200"
         print("after inference: ", checkpoint)
         global_step = int(checkpoint.split('-')[-1])
         model = model_class.from_pretrained(checkpoint)
